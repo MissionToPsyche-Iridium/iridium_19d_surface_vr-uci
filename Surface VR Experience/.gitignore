@@ -9,6 +9,7 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+/platform-tools-latest-windows/
 Packages/*/          # Ignore individual package folders to avoid large file sizes 
 !Packages/manifest.json  # Keep manifest.json tracked
 
