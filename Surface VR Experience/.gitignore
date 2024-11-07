@@ -9,6 +9,8 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+/platform-tools-latest-windows/
+/Surface VR Experience/Assets/Scenes/16Psyche-1/OcclusionCullingData.asset
 Packages/*/          # Ignore individual package folders to avoid large file sizes 
 !Packages/manifest.json  # Keep manifest.json tracked
 
