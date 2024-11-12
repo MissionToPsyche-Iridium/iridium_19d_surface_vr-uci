@@ -5,12 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/loading-screen.unity
-    guid: dcdfa78afc31f644d88fd56b11ff648a
   - enabled: 1
-    path: Assets/Scenes/16Psyche-1.unity
-    guid: a0a69f03c8424ce42bfc2108d1d48a16
+    path: Assets/Scenes/16Psyche-3.unity
+    guid: 924d3ecda1855794a9c52aee0f730fb0
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 6d2fa1fd6f5cb4140a0dca4b1e509e38, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 7d2471d79b023d946b0cf72ef804d45b, type: 2}
