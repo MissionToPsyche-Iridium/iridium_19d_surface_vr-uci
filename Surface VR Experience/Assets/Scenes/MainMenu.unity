@@ -366,11 +366,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9032954039820430273, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_MaxRaycastDistance
-      value: 100
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 9146015503685400394, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_MaxRaycastDistance
-      value: 100
+      value: 400
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -536,16 +536,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815930327}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: -1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.025}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1471384448}
+  m_Father: {fileID: 1731055839}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -423.082}
+  m_AnchoredPosition: {x: 3.5182, y: -55.944427}
   m_SizeDelta: {x: 2526.579, y: 396.327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &815930329
@@ -592,10 +592,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1169905000}
-        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
+      - m_Target: {fileID: 1731055840}
+        m_TargetAssemblyTypeName: ImageCarousel, Assembly-CSharp
+        m_MethodName: LoadCurrentScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -702,7 +702,7 @@ RectTransform:
   m_GameObject: {fileID: 1162631974}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: -1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1731055839}
@@ -819,7 +819,6 @@ GameObject:
   - component: {fileID: 1169904998}
   - component: {fileID: 1169904997}
   - component: {fileID: 1169904996}
-  - component: {fileID: 1169905000}
   - component: {fileID: 1169905001}
   m_Layer: 0
   m_Name: MainMenu
@@ -930,18 +929,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &1169905000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1169904994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67b960de153a0cf4aa9548ddb96181b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1169905001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1151,7 +1138,7 @@ RectTransform:
   m_GameObject: {fileID: 1245500068}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: -1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1731055839}
@@ -1417,7 +1404,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 815930328}
   - {fileID: 1281788324}
   - {fileID: 1490071091}
   - {fileID: 1991676782}
@@ -1634,6 +1620,7 @@ RectTransform:
   - {fileID: 1162631975}
   - {fileID: 447998214}
   - {fileID: 16749339}
+  - {fileID: 815930328}
   m_Father: {fileID: 1221353019}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1657,8 +1644,14 @@ MonoBehaviour:
   images:
   - {fileID: 21300000, guid: d766a61bb9fbf8c46aaf3d1350797d2b, type: 3}
   - {fileID: 21300000, guid: 9fc8d1afb61d80d43bfdde21fb039382, type: 3}
+  - {fileID: 21300000, guid: c4926df1152d49848bdb3df461ef7f78, type: 3}
+  sceneNames:
+  - PsycheHobaCrater
+  - PsycheMetalCraterPOC
+  - PsycheHobaCraterLarge
   nextButton: {fileID: 1162631976}
   previousButton: {fileID: 1245500070}
+  startButton: {fileID: 0}
   imageNameText: {fileID: 16749340}
   currentIndex: 0
 --- !u!114 &1731055841

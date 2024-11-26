@@ -1,19 +1,29 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro; //Text mesh pro text is used for the scene image name display
 
 public class ImageCarousel : MonoBehaviour
 {
     [SerializeField] private Image carouselImage;        // Reference to the Image component for displaying images
     [SerializeField] private Sprite[] images;            // Array of Sprites for the carousel
+   [SerializeField] private string[] sceneNames;       // Array of Scene names
     [SerializeField] private Button nextButton;          // Reference to the "Next" button
     [SerializeField] private Button previousButton;      // Reference to the "Previous" button
+    [SerializeField] private Button startButton;          // Reference to the "Start" button
     [SerializeField] private TMP_Text imageNameText;         // Reference to the Text mesh pro component for the image name
 
     public int currentIndex = 0;                        // Keeps track of the current image index
 
     public void Start()
     {
+
+        if(images.Length != sceneNames.Length)
+        {
+            Debug.LogError("Array length mismatch between images and sceneNames");
+            return;
+        }
+
         // Initialize the carousel with the first image
         if (images.Length > 0)
         {
@@ -53,6 +63,16 @@ public class ImageCarousel : MonoBehaviour
         {
             // Display the name of the current image (use the Sprite name property)
             imageNameText.text = images[currentIndex].name;
+        }
+    }
+
+    public void LoadCurrentScene()
+    {
+        // Load the scene currently displayed on the carousel
+        if (sceneNames.Length > 0)
+        {
+            string selectedSceneName = sceneNames[currentIndex];
+            SceneManager.LoadScene(selectedSceneName);
         }
     }
 }

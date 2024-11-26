@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 6931c020803acf74b8d8dda6c49eb3ef
+  - enabled: 1
+    path: Assets/Scenes/PsycheHobaCrater.unity
+    guid: 924d3ecda1855794a9c52aee0f730fb0
+  - enabled: 1
+    path: Assets/Scenes/PsycheMetalCraterPOC.unity
+    guid: db669aef9dae9bb42be4a4b79ba6a29d
+  - enabled: 1
     path: Assets/Scenes/PsycheHobaCraterLarge.unity
     guid: 5bd307c3854ecc84e9b755f3348a1003
   m_configObjects:
