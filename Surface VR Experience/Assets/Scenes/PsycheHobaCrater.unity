@@ -187,11 +187,11 @@ MonoBehaviour:
   colorMapResolution: 256
   layerSettings:
   - enabled: 1
-    layer: {fileID: 8574412962073106934, guid: bd89a3490a689eb4cbf4f0fd2cf6fab8, type: 2}
+    layer: {fileID: 8574412962073106934, guid: 5ff21f4cf6311a247b651e293746f5a5, type: 2}
     modifierStack:
-    - {fileID: 702675133}
+    - {fileID: 1134268398}
   - enabled: 1
-    layer: {fileID: 8574412962073106934, guid: bdfa5c53772c51c49a89545aa2b87225, type: 2}
+    layer: {fileID: 8574412962073106934, guid: f63a18984157b43479f1d2f676754df9, type: 2}
     modifierStack: []
   autoRepaint: 0
   terrainListeners: []
@@ -278,27 +278,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 0.0238
---- !u!114 &702675133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e07d49e90874d70b9937cb753327a2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enabled: 1
-  label: Noise
-  blendMode: 0
-  opacity: 100
-  passIndex: 4
-  noiseType: 0
-  noiseScale: 100
-  noiseOffset: {x: 0, y: 0}
-  levels: {x: 0.33225808, y: 0.8322576}
 --- !u!1 &940693426
 GameObject:
   m_ObjectHideFlags: 0
@@ -546,6 +525,27 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1134268398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e07d49e90874d70b9937cb753327a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enabled: 1
+  label: Noise
+  blendMode: 0
+  opacity: 100
+  passIndex: 4
+  noiseType: 0
+  noiseScale: 10
+  noiseOffset: {x: 0, y: 0}
+  levels: {x: 0.27777776, y: 0.77777755}
 --- !u!1 &1378939406
 GameObject:
   m_ObjectHideFlags: 0
