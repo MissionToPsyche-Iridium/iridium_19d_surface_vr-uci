@@ -5,6 +5,8 @@ public class TriggerInfoPanel : MonoBehaviour
     [SerializeField] private GameObject infoPanel; // Reference to the info panel
     private CanvasGroup canvasGroup;              // Canvas Group for fading the panel away on timeout
 
+    private static TriggerInfoPanel currentlyOpenPanel; // Used to close current panel if a new one's opened
+
     private void Awake()
     {
         // Ensure the info panel is hidden at the start
@@ -17,6 +19,13 @@ public class TriggerInfoPanel : MonoBehaviour
 
     public void ShowInfoPanel()
     {
+
+        // Close any open panel
+        if (currentlyOpenPanel != null && currentlyOpenPanel != this)
+        {
+            currentlyOpenPanel.HideInfoPanel();
+        }
+
         // Show the info panel
         if (infoPanel != null)
         {
@@ -24,6 +33,8 @@ public class TriggerInfoPanel : MonoBehaviour
             canvasGroup.alpha = 1; // Reset alpha to fully visible
             StopAllCoroutines(); // Stop any ongoing fade-out
             StartCoroutine(FadeOutAfterDelay(10f)); // Start fade-out after 10 seconds
+
+            currentlyOpenPanel = this; // Used to close current panel if a new one's opened
         }
 
     }
@@ -44,19 +55,32 @@ public class TriggerInfoPanel : MonoBehaviour
             yield return null;
         }
 
-        // Ensure alpha is 0 and deactivate the panel
+        // Set alpha to 0 and deactivate the panel
         canvasGroup.alpha = 0;
         infoPanel.SetActive(false);
+
+        // clear the currently open panel
+        if (currentlyOpenPanel == this)
+        {
+            currentlyOpenPanel = null;
+        }
     }
 
 
-    //to be used when the close button is pressed
+    // To be used when the close button is pressed
     public void HideInfoPanel()
     {
         // Hide the info panel (optional)
         if (infoPanel != null)
         {
             infoPanel.SetActive(false);
+            StopAllCoroutines(); //terminates fade out coroutine
+        }
+
+        // clear the currently open panel
+        if (currentlyOpenPanel == this)
+        {
+            currentlyOpenPanel = null;
         }
     }
 }
