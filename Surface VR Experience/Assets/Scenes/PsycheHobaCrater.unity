@@ -383,6 +383,22 @@ PrefabInstance:
       propertyPath: m_PresetInfoIsWorld
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7536323491059977024, guid: cd1982119b515f247a22de7174e636b8, type: 3}
+      propertyPath: nextScene
+      value: PsycheMetalCraterPOC
+      objectReference: {fileID: 0}
+    - target: {fileID: 7536323491059977024, guid: cd1982119b515f247a22de7174e636b8, type: 3}
+      propertyPath: remainingTime
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 7536323491059977024, guid: cd1982119b515f247a22de7174e636b8, type: 3}
+      propertyPath: sceneNames.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7536323491059977024, guid: cd1982119b515f247a22de7174e636b8, type: 3}
+      propertyPath: sceneNames.Array.data[0]
+      value: PsycheMetalCraterPOC
+      objectReference: {fileID: 0}
     - target: {fileID: 8677419604365706633, guid: cd1982119b515f247a22de7174e636b8, type: 3}
       propertyPath: m_Camera
       value: 
@@ -438,6 +454,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 971889488}
   - {fileID: 783870120}
   m_Father: {fileID: 1378939407}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -653,6 +670,71 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1001 &971889487
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 940693427}
+    m_Modifications:
+    - target: {fileID: 858200292859855137, guid: eb695a3853851d1429dce7589b7d0160, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -57.299988
+      objectReference: {fileID: 0}
+    - target: {fileID: 858200292859855137, guid: eb695a3853851d1429dce7589b7d0160, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 79.37242
+      objectReference: {fileID: 0}
+    - target: {fileID: 858200292859855137, guid: eb695a3853851d1429dce7589b7d0160, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 124.849915
+      objectReference: {fileID: 0}
+    - target: {fileID: 858200292859855137, guid: eb695a3853851d1429dce7589b7d0160, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 858200292859855137, guid: eb695a3853851d1429dce7589b7d0160, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 858200292859855137, guid: eb695a3853851d1429dce7589b7d0160, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 858200292859855137, guid: eb695a3853851d1429dce7589b7d0160, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 858200292859855137, guid: eb695a3853851d1429dce7589b7d0160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 858200292859855137, guid: eb695a3853851d1429dce7589b7d0160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 858200292859855137, guid: eb695a3853851d1429dce7589b7d0160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336788093947203518, guid: eb695a3853851d1429dce7589b7d0160, type: 3}
+      propertyPath: m_Name
+      value: Menu
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6643226886006131855, guid: eb695a3853851d1429dce7589b7d0160, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: eb695a3853851d1429dce7589b7d0160, type: 3}
+--- !u!4 &971889488 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 858200292859855137, guid: eb695a3853851d1429dce7589b7d0160, type: 3}
+  m_PrefabInstance: {fileID: 971889487}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1064854784
 MonoBehaviour:
   m_ObjectHideFlags: 0
