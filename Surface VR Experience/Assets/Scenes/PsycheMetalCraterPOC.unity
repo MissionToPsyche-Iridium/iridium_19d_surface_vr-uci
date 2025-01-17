@@ -2047,6 +2047,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1592918318 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9014170783809206335, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+  m_PrefabInstance: {fileID: 1592918315}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1608387286 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7617736958067752232, guid: 4fb0db2bc4c851941adcf1764f73a78a, type: 3}
@@ -2178,10 +2183,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2158818446372144471, guid: fc203ea52fa5c5344866587b4c614921, type: 3}
       propertyPath: m_text
-      value: "\u201CLook again at that dot. That's here. That's home. That's us.
-        On it everyone you love, everyone you know, everyone you ever heard of, every
-        human being who ever was, lived out their lives ... the history of our species
-        lived there-on a mote of dust suspended in a sunbeam.\" -Carl Sagan"
+      value: 'Distance from 16 Psyche: Approximately 1.5 astronomical units (AU)
+        or ~224 million km on average.
+
+        Size: Earth would appear roughly
+        150 times smaller than the Moon does from Earth.'
       objectReference: {fileID: 0}
     - target: {fileID: 2363374922623410443, guid: fc203ea52fa5c5344866587b4c614921, type: 3}
       propertyPath: m_Enabled
@@ -2684,11 +2690,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fb0db2bc4c851941adcf1764f73a78a, type: 3}
---- !u!4 &1592918318 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9014170783809206335, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-  m_PrefabInstance: {fileID: 1592918315}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
