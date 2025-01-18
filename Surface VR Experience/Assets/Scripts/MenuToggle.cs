@@ -17,6 +17,7 @@ public class MenuToggle : MonoBehaviour
 
         toggleMenuAction.action.Enable();
         toggleMenuAction.action.performed += ToggleMenu;
+        menu.SetActive(false);
     }
 
     private void OnDestroy()
