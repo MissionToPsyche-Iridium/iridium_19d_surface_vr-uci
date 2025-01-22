@@ -11,6 +11,12 @@ public class Timer : MonoBehaviour
     [SerializeField] float remainingTime;
     [SerializeField] private string nextScene;
 
+    void Start() {
+        if (!GameState.isEventMode) {
+            Destroy(gameObject);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
