@@ -6,6 +6,7 @@ public class GameState : MonoBehaviour
 {
     public static GameState Instance {get; private set; }
     public static bool isEventMode = true;
+    public static float timeBeforeReset = -1;
 
 
     public void toggleMode()

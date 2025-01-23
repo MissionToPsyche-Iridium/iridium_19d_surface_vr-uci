@@ -8,12 +8,21 @@ using System.Collections.Generic;
 public class Timer : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timerText;
-    [SerializeField] float remainingTime;
+    //
     [SerializeField] private string nextScene;
+    public float remainingTime;
 
     void Start() {
         if (!GameState.isEventMode) {
             Destroy(gameObject);
+        }
+        
+        // If the user reloaded the scene (as indicated by timeBeforeReset =/= -1), their 
+        // remaining time is retrieved so that they can't abuse the reload button to gain more time.
+        else if (GameState.timeBeforeReset >= 0)
+        {
+            remainingTime = GameState.timeBeforeReset;
+            GameState.timeBeforeReset = -1;
         }
     }
 
