@@ -1225,6 +1225,10 @@ PrefabInstance:
       value: PsycheMetalCraterPOC
       objectReference: {fileID: 0}
     - target: {fileID: 7536323491059977024, guid: cd1982119b515f247a22de7174e636b8, type: 3}
+      propertyPath: startingTime
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 7536323491059977024, guid: cd1982119b515f247a22de7174e636b8, type: 3}
       propertyPath: remainingTime
       value: 120
       objectReference: {fileID: 0}
@@ -1894,6 +1898,38 @@ PrefabInstance:
     - target: {fileID: 6336788093947203518, guid: eb695a3853851d1429dce7589b7d0160, type: 3}
       propertyPath: m_Name
       value: Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 9198515434005243377, guid: eb695a3853851d1429dce7589b7d0160, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9198515434005243377, guid: eb695a3853851d1429dce7589b7d0160, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9198515434005243377, guid: eb695a3853851d1429dce7589b7d0160, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7988171466023316193, guid: d916db833a1d3df4fa536be85cd8cf2c, type: 3}
+    - target: {fileID: 9198515434005243377, guid: eb695a3853851d1429dce7589b7d0160, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9198515434005243377, guid: eb695a3853851d1429dce7589b7d0160, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReloadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 9198515434005243377, guid: eb695a3853851d1429dce7589b7d0160, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ResetGame, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9198515434005243377, guid: eb695a3853851d1429dce7589b7d0160, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: PsycheHobaCrater
+      objectReference: {fileID: 0}
+    - target: {fileID: 9198515434005243377, guid: eb695a3853851d1429dce7589b7d0160, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
