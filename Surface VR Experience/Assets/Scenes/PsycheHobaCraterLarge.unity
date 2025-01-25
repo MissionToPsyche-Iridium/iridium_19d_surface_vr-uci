@@ -5390,7 +5390,7 @@ GameObject:
   - component: {fileID: 1373694230}
   - component: {fileID: 1373694229}
   m_Layer: 5
-  m_Name: Image
+  m_Name: PAUSEDText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8825,6 +8825,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5912106237168927210, guid: eb695a3853851d1429dce7589b7d0160, type: 3}
   m_PrefabInstance: {fileID: 5830162889659757839}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5830162889659757841 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6336788093947203518, guid: eb695a3853851d1429dce7589b7d0160, type: 3}
+  m_PrefabInstance: {fileID: 5830162889659757839}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8168712047830955845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8917,6 +8922,10 @@ PrefabInstance:
       propertyPath: nextScene
       value: MainMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 7536323491059977024, guid: cd1982119b515f247a22de7174e636b8, type: 3}
+      propertyPath: inGameMenu
+      value: 
+      objectReference: {fileID: 5830162889659757841}
     - target: {fileID: 7536323491059977024, guid: cd1982119b515f247a22de7174e636b8, type: 3}
       propertyPath: remainingTime
       value: 120

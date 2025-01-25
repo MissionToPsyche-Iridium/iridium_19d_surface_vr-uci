@@ -8,15 +8,15 @@ using System.Collections.Generic;
 public class Timer : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timerText;
-    //
     [SerializeField] private string nextScene;
+    [SerializeField] GameObject inGameMenu;
     public float remainingTime;
 
     void Start() {
         if (!GameState.isEventMode) {
             Destroy(gameObject);
         }
-        
+
         // If the user reloaded the scene (as indicated by timeBeforeReset =/= -1), their 
         // remaining time is retrieved so that they can't abuse the reload button to gain more time.
         else if (GameState.timeBeforeReset >= 0)
@@ -26,26 +26,30 @@ public class Timer : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    // Update the time, as long as the game isn't paused
     void Update()
     {
-        if (remainingTime < 5)
+        if (inGameMenu != null)
         {
-            timerText.color = Color.red;
+            if (!inGameMenu.activeSelf)
+            {
+                if (remainingTime < 5)
+                {
+                    timerText.color = Color.red;
+                }
+                if (remainingTime > 0)
+                {
+                    remainingTime -= Time.deltaTime;
+                }
+                if (remainingTime <= 0)
+                {
+                    remainingTime = 0;
+                    SceneManager.LoadScene(nextScene);
+                }
+                int minutes = Mathf.FloorToInt(remainingTime / 60);
+                int seconds = Mathf.FloorToInt(remainingTime % 60);
+                timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+            }
         }
-        if (remainingTime > 0)
-        {
-            remainingTime -= Time.deltaTime;
-        }
-        if (remainingTime <= 0)
-        {
-            remainingTime = 0;
-            //string currentSceneName = SceneManager.GetActiveScene().name;
-            //int nextSceneIndex = sceneNames.IndexOf(currentSceneName) + 1;
-            SceneManager.LoadScene(nextScene);
-        }
-        int minutes = Mathf.FloorToInt(remainingTime / 60);
-        int seconds = Mathf.FloorToInt(remainingTime % 60);
-        timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }
