@@ -3269,7 +3269,7 @@ PrefabInstance:
 
         Moons: The moons would appear
         brighter and larger as well, particularly the Galilean moons Io, Europa,
-        Ganymete, and Callisto.'
+        Ganymede, and Callisto.'
       objectReference: {fileID: 0}
     - target: {fileID: 2363374922623410443, guid: fc203ea52fa5c5344866587b4c614921, type: 3}
       propertyPath: m_Enabled
