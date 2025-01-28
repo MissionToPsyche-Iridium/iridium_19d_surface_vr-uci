@@ -4802,8 +4802,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'Description: The surface of the asteroid 16 Psyche, hypothesized to be
-    primarily metallic, may posess craters with unique structural features such as
-    deeper craters, and razor-sharp rims.'
+    primarily metallic, may possess craters with unique structural features such
+    as deeper craters, and razor-sharp rims.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: efa915dab8cedda42be0f38c644a66e5, type: 2}
   m_sharedMaterial: {fileID: -8752609567494478377, guid: efa915dab8cedda42be0f38c644a66e5, type: 2}
@@ -7114,8 +7114,8 @@ PrefabInstance:
 
         Atomic Number: 16
 
-        Description: Usally present
-        as a sulfide, it has been found on Mars by the Curiosity rover, Jupiter''s
+        Description: Usually
+        present as a sulfide, it has been found on Mars by the Curiosity rover, Jupiter''s
         volcanic moon Io, and on many meteorites.'
       objectReference: {fileID: 0}
     - target: {fileID: 2363374922623410443, guid: fc203ea52fa5c5344866587b4c614921, type: 3}
@@ -7855,8 +7855,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'Description: Can be obtained by heating iron (Fe) and sulfur (S) to form
-    Iron Sulfide (FeS). Studies provide evidence suggesting that iron sulfide plays
-    a key role in the process of asteroid core formation.'
+    Iron Sulfide (FeS). Studies have suggested that iron sulfide plays a key role
+    in the process of asteroid core formation.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: efa915dab8cedda42be0f38c644a66e5, type: 2}
   m_sharedMaterial: {fileID: -8752609567494478377, guid: efa915dab8cedda42be0f38c644a66e5, type: 2}
