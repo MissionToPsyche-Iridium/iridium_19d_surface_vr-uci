@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ResetGame : MonoBehaviour
 {
     [SerializeField] GameObject resetUnavailablePanel;
+    [SerializeField] GameObject resetConfirmationPanel;
     public void ReloadScene() 
     {
         if (GameState.isEventMode)
@@ -20,12 +21,23 @@ public class ResetGame : MonoBehaviour
         }
         else
         {
-            Scene currentScene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(currentScene.name);
+            resetConfirmationPanel.SetActive(true);
         }
     }
+
     public void togglePanel()
     {
         resetUnavailablePanel.SetActive(false);
+    }
+
+    public void toggleConfirmationPanel()
+    {
+        resetConfirmationPanel.SetActive(false);
+    }
+
+    public void resetScene()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
     }
 }
