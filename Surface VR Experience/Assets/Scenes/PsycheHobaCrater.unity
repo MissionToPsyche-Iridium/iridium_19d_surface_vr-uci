@@ -1683,6 +1683,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 940693427}
     m_Modifications:
+    - target: {fileID: 1482869381611204848, guid: cd1982119b515f247a22de7174e636b8, type: 3}
+      propertyPath: m_fontSize
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482869381611204848, guid: cd1982119b515f247a22de7174e636b8, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: e087978ba5d57034289736ed43892893, type: 2}
+    - target: {fileID: 1482869381611204848, guid: cd1982119b515f247a22de7174e636b8, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482869381611204848, guid: cd1982119b515f247a22de7174e636b8, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8752609567494478377, guid: e087978ba5d57034289736ed43892893, type: 2}
+    - target: {fileID: 1482869381611204848, guid: cd1982119b515f247a22de7174e636b8, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5838834017262870816, guid: cd1982119b515f247a22de7174e636b8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
