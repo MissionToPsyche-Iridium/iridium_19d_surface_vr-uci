@@ -480,6 +480,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObjectInteractionIndicatorLight
       objectReference: {fileID: 0}
+    - target: {fileID: 6525051745350784525, guid: 4fb0db2bc4c851941adcf1764f73a78a, type: 3}
+      propertyPath: simulationSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7617736958067752232, guid: 4fb0db2bc4c851941adcf1764f73a78a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -50
@@ -2487,6 +2491,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObjectInteractionIndicatorLight
       objectReference: {fileID: 0}
+    - target: {fileID: 6525051745350784525, guid: 4fb0db2bc4c851941adcf1764f73a78a, type: 3}
+      propertyPath: simulationSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7617736958067752232, guid: 4fb0db2bc4c851941adcf1764f73a78a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.2
@@ -3308,6 +3316,10 @@ PrefabInstance:
     - target: {fileID: 2421619901900956379, guid: 4fb0db2bc4c851941adcf1764f73a78a, type: 3}
       propertyPath: m_Name
       value: ObjectInteractionIndicatorLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 6525051745350784525, guid: 4fb0db2bc4c851941adcf1764f73a78a, type: 3}
+      propertyPath: simulationSpeed
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6525051745350784525, guid: 4fb0db2bc4c851941adcf1764f73a78a, type: 3}
       propertyPath: InitialModule.startColor.maxColor.g
