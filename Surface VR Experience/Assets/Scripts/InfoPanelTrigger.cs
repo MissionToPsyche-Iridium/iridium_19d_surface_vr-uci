@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
+using System;
 public class TriggerInfoPanel : MonoBehaviour
 {
     [SerializeField] private GameObject infoPanel; // Reference to the info panel
@@ -26,7 +28,7 @@ public class TriggerInfoPanel : MonoBehaviour
             currentlyOpenPanel.HideInfoPanel();
         }
 
-        // Show the info panel
+        // Show the info panel and update progress in GameState
         if (infoPanel != null)
         {
             infoPanel.SetActive(true);
@@ -35,6 +37,25 @@ public class TriggerInfoPanel : MonoBehaviour
             StartCoroutine(FadeOutAfterDelay(10f)); // Start fade-out after 10 seconds
 
             currentlyOpenPanel = this; // Used to close current panel if a new one's opened
+
+            // Update game progress
+            string sceneName = SceneManager.GetActiveScene().name;
+            string panelName = infoPanel.name;
+            if (sceneName == "PsycheHobaCrater")
+            {
+                GameState.hoba_panels.Remove(panelName);
+                if (GameState.hoba_panels.Count == 0) { Debug.Log("Clicked all items in hoba crater!"); }
+            }
+            else if (sceneName == "PsycheHobaCraterLarge")
+            {
+                GameState.HCL_panels.Remove(panelName);
+                if (GameState.HCL_panels.Count == 0) { Debug.Log("Clicked all items in hoba crater large!"); }
+            }
+            else if (sceneName == "PsycheMetalCraterPOC")
+            {
+                GameState.metal_panels.Remove(panelName);
+                if (GameState.metal_panels.Count == 0) { Debug.Log("Clicked all items in metal crater!"); }
+            }
         }
 
     }
