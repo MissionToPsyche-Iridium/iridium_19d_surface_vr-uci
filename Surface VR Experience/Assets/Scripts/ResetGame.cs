@@ -38,6 +38,7 @@ public class ResetGame : MonoBehaviour
     public void resetScene()
     {
         Scene currentScene = SceneManager.GetActiveScene();
+        GameState.Instance.resetProgress();
         SceneManager.LoadScene(currentScene.name);
     }
 }
