@@ -2571,9 +2571,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2158818446372144471, guid: fc203ea52fa5c5344866587b4c614921, type: 3}
       propertyPath: m_text
-      value: "Orbit C: \nAltitude: Approximately 109 miles (175 km) above the asteroid's
-        surface.\nDuration: 100 days.\nObjectives: Determine the chemical composition
-        of the surface using gamma-ray and neutron spectrometers."
+      value: "Orbit C: \r\nAltitude: Approximately 118 miles (190 km) above the asteroid's
+        surface.\r\nDuration: 100 days.\r\nObjectives: Measure topography and perform
+        the highest-priority magnetic field and gravity measurements.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 2363374922623410443, guid: fc203ea52fa5c5344866587b4c614921, type: 3}
       propertyPath: m_Enabled
