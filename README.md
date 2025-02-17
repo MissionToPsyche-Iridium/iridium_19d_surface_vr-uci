@@ -18,11 +18,12 @@ Yeseul Lim <br>
 Dylan Gilbert Peppard <br>
 Jonathan Vigil <br>
 
-***University name** <br>
+**University name** <br>
 University of California, Irvine (UCI)
 
 **Screenshots (App)** <br>
 
+**----------------------------------------------------------------------------------------------------------------------------------------------------------** <br>
 **Building the project** <br>
 
 Create the project on your local system by using the project’s web URL: https://github.com/MissionToPsyche-Iridium/iridium_19d_surface_vr-uci.git <br>
@@ -36,9 +37,9 @@ Open the Unity Hub and click on the Installs tab. Install the Unity (2022.3.50f1
 In the Unity Hub, click the “Projects” tab, then click the “Add” dropdown menu and select “Add project from disk.” Select the location of your cloned project. <br>
 
 The project should now be listed under the projects. Click to open the project. <br>
-Note: The first run of the project may take several minutes as it imports and installs the various packages required for the project. <br>
+Note: The first run of the project may take several minutes as it imports and installs the various packages required for the project. <br><br>
 
-
+**----------------------------------------------------------------------------------------------------------------------------------------------------------** <br>
 **Frameworks, IDE, Programming languages, a library used in the project.** <br>
 
 Note: This project was developed for the Meta Quest Virtual Reality Headsets (2, 3S, and 3). <br>
@@ -58,34 +59,70 @@ Meta Quest Touch Pro Controller Profile. <br>
 Hand Interaction Profile. <br>
 
 
-
 **Programming Languages** <br>
-Any IDE supporting C#. <br>
- 
+Any IDE supporting C#. <br><br>
 
+**Other Tools**
+Git, Bash, and Vim <br>
+
+**----------------------------------------------------------------------------------------------------------------------------------------------------------** <br>
+**Enabling development mode on Meta Quest.**
+1. Setup and verify an oculus developer account at https://developer.oculus.com/ <br>
+2. Download and install Meta Horizon app on iOS or Android to mobile phone. <br>
+a. Go to the app add headset to devices (menu/devices/connect new) <br>
+b. Select: device/headset settings and turn on developer mode <br>
+3. Download and install oculus app for PC, https://www.meta.com/help/quest/pcvr/ <br>
+a. Connect headset to the pc via quest using a direct link (best) or air link. Plug into the pc first, then plug into the headset while wearing it.
+b. Accept all popups to allow usb debugging. <br>
+
+**Running a scene on the Meta Quest within Unity.** <br>
+1. You can now open the quest link and connect to your desktop after enabling development mode for the Meta Quest.<br>
+2. Navigate to the desktop view and click. <br>
+3. Open Unity and load the project.<br>
+4. Press play in Unity to load and run the scene. <br>
+5. The scene should run in VR on the headset.<br>
+Debug Tip: If the load time of the scene is large, the first run of that scene may prevent the scene from properly displaying. You may need to stop the running scene after a few moments, then press play again. <br>
+
+**Game Installation / Installing APKs to the Meta Quest** <br>
+1. Build the application for Android, see: https://docs.unity3d.com/6000.0/Documentation/Manual/android-BuildProcess.html <br>
+2. Install Android SDK Platform tools: https://developer.android.com/tools/releases/platform-tools<br>
+3. Build the project in Unity (open project/file/build settings/build) assuming the platform has been set to Android, and the player settings are properly configured. <br>
+4. Open the command console and navigate to the apk’s root directory <br>
+5. Ensure device is connected to pc via quest link. <br>
+5. Issue the following commands via command line: <br>
+$ adb start-server<br>
+$ adb install projectname.apk<br>
+6. After a moment the APK should install and become available on the headset.<br>
+7. Visit the following link for more information and commands for the Android Debug Bridge (ADB): https://developer.android.com/tools/adb <br>
+
+**Running APKs on the Meta Quest Headset** <br>
+1. Navigate to Library/applications/unknown sources (found in drop down menu). <br>
+2. Click on the application to run. <br>
+
+
+**----------------------------------------------------------------------------------------------------------------------------------------------------------** <br>
 **Known issues** <br>
 
-**-----Large Files-----** <br>
+**Large Files**
 A standard GitHub repository has a file size limit of 100MB. To enable our collaborators to share large files, we will use Github Large File Storage (LFS). <br>
 See About Git Large File Storage: https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage#pointer-file-format <br>
 Collaborators: “If collaborators on your repository don't have Git LFS installed, they won't have access to the original large file. If they attempt to clone your repository, they will only fetch the pointer files, and won't have access to any of the actual data.” See Collaboration with Git Large File Storage: https://docs.github.com/en/repositories/working-with-files/managing-large-files/collaboration-with-git-large-file-storage <br>
 Installation: issue “git lfs install” on the branch with the large file. Setup LFS before adding or committing your branch, failure to do so will result in the inability to commit your large file(s). See Installing Git Large File Storage: https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage
 Configuration: Git LFS will have to be associated with the large file you want to upload before you can push it. See Configuring Git Large File Storage: https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage <br>
-Step-by-step Commit Instructions:<br>
+Step-by-step Commit Instructions:
 1. Issue ‘git checkout -b your-feature-branch’ <br>
-2. Issue ‘git lfs install’ if you haven't already done so <br>
+2. Issue ‘git lfs install’ (if you haven't already done so) <br>
 2. Issue ‘git lfs track path/to/file’ <br>
 3. Issue ‘git add .gitattributes’ <br>
 4. Issue ‘add path/to/file’ <br>
-5. Issue ‘git commit -m “your commit message”’ <br>
-**-----Large Files-----** <br><br>
+5. Issue ‘git commit -m “your commit message”’ <br><br>
 
 **Gameplay Tutorial Video** <br>
 
 **Acknowledgements** <br>
 NASA and Arizona State University for providing this incredible opportunity. <br>
 Our Senior capstone course staff. <br>
-Open-source contributors whose tools and libraries we utilized. <br>
+Open-source contributors whose tools and libraries we've utilized. <br>
 
 **For any inquiries, please contact** <br>
 David Branson 
