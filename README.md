@@ -23,7 +23,7 @@ University of California, Irvine (UCI)
 
 **Screenshots (App)** <br>
 
-**---------------------------------------------------------------------------------------------------------------------------------** <br>
+**-----------------------------------------------------------------------------------------------------------------------------** <br>
 **Building the project** <br>
 
 Create the project on your local system by using the project’s web URL: https://github.com/MissionToPsyche-Iridium/iridium_19d_surface_vr-uci.git <br>
@@ -39,7 +39,7 @@ In the Unity Hub, click the “Projects” tab, then click the “Add” dropdow
 The project should now be listed under the projects. Click to open the project. <br>
 Note: The first run of the project may take several minutes as it imports and installs the various packages required for the project. <br><br>
 
-**---------------------------------------------------------------------------------------------------------------------------------** <br>
+**-----------------------------------------------------------------------------------------------------------------------------** <br>
  <br>
 **Frameworks, IDE, Programming languages, a library used in the project.** <br>
 
@@ -66,7 +66,7 @@ Any IDE supporting C#. <br><br>
 **Other Tools**
 Git, Bash, and Vim <br>
 
-**---------------------------------------------------------------------------------------------------------------------------------** <br>
+**-----------------------------------------------------------------------------------------------------------------------------** <br>
  <br>
 **Enabling development mode on Meta Quest.**
 1. Setup and verify an oculus developer account at https://developer.oculus.com/ <br>
@@ -102,7 +102,7 @@ $ adb install projectname.apk<br>
 2. Click on the application to run. <br>
 
 
-**---------------------------------------------------------------------------------------------------------------------------------** <br>
+**-----------------------------------------------------------------------------------------------------------------------------** <br>
  <br>
 **Known issues** <br>
 
