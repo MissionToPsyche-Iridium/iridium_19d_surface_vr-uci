@@ -2456,9 +2456,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2158818446372144471, guid: fc203ea52fa5c5344866587b4c614921, type: 3}
       propertyPath: m_text
-      value: "Orbit A: \nAltitude: Approximately 435 miles (700 kilometers) above
-        the asteroid's surface.\nDuration: 56 days.\nObjectives: Characterize the
-        magnetic field and conduct preliminary mapping of the asteroid."
+      value: "Orbit A: \r\nAltitude: Approximately 441 miles (709 kilometers) above
+        the asteroid's surface.\r\nDuration: 56 days.\r\nObjectives: Imaging and
+        mapping while measuring the magnetic field and gravity of the asteroid.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 2363374922623410443, guid: fc203ea52fa5c5344866587b4c614921, type: 3}
       propertyPath: m_Enabled
