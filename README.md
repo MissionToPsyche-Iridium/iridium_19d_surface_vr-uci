@@ -130,6 +130,9 @@ David Branson <br>
 Email:      dbransonuci@gmail.com <br>
 Linkedin: linkedin.com/dbransonuci <br><br>
 
+Dylan Peppard <br>
+Email:      pepparddylan@yahoo.com <br>
+Linkedin: https://www.linkedin.com/in/dylan-peppard-896713132/ <br><br>
 
 **PSYCHE** <br>
 ![ascii-art](https://github.com/user-attachments/assets/c1ce6681-3cf1-4fed-b103-555c487d8520)
