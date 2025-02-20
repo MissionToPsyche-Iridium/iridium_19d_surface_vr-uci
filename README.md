@@ -130,6 +130,23 @@ David Branson <br>
 Email:      dbransonuci@gmail.com <br>
 Linkedin: linkedin.com/dbransonuci <br><br>
 
+Dylan Peppard <br>
+Email:      pepparddylan@yahoo.com <br>
+Linkedin: https://www.linkedin.com/in/dylan-peppard-896713132/ <br><br>
+
+Jonathan Vigil <br>
+Email:      jvigil1738@gmail.com <br>
+
+Yeseul Lim <br>
+Email:      yeseullim1@gmail.com <br>
+
+Armani Cardenas <br>
+Email:      armanicardenas12@gmail.com <br>
+Linkedin: https://www.linkedin.com/in/armanicardenas <br><br>
+
+Caroline David <br>
+Email:      carolinehudavid@gmail.com <br>
+Linkedin: https://www.linkedin.com/in/carolinehudavid?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app <br><br>
 
 **PSYCHE** <br>
 ![ascii-art](https://github.com/user-attachments/assets/c1ce6681-3cf1-4fed-b103-555c487d8520)
