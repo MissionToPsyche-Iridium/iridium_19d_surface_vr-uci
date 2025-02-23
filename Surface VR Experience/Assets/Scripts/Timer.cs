@@ -4,19 +4,28 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using System;
 
 public class Timer : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] private string nextScene;
     [SerializeField] GameObject inGameMenu;
+    [SerializeField] GameObject levelCompletePanel;
+
     public float remainingTime;
+    private bool showCompletePanel = false;
+    private bool completePanelShown = false;
+    private float timeToShowCompletePanel = -1;
+    private readonly float DelayBetweenCompletionAndPanel = 10; // When progress reaches 100%, the completion panel shows after this amount of time elapses
+    private readonly float TimeThresholdForCompletionPanel = 20;   // If the game is completed with at least this much time left on the clock, show the completion panel
+    private readonly float  ShowTimerRedTime = 5; // Time when timer turns red
 
     void Start() {
         if (!GameState.isEventMode) {
             Destroy(gameObject);
         }
-
+        // LEGACY CODE - will delete when i sure it not gonna break anything
         // If the user reloaded the scene (as indicated by timeBeforeReset =/= -1), their 
         // remaining time is retrieved so that they can't abuse the reload button to gain more time.
         else if (GameState.timeBeforeReset >= 0)
@@ -33,7 +42,20 @@ public class Timer : MonoBehaviour
         {
             if (!inGameMenu.activeSelf)
             {
-                if (remainingTime < 5)
+                // If the player completes the level with over <threshold> seconds on the clock, proposition
+                // them to move to the next scene after <delay> seconds so they can read the final panel
+                if (remainingTime > TimeThresholdForCompletionPanel && !showCompletePanel && GameState.Instance.get_progress(SceneManager.GetActiveScene().name) == 100)
+                {
+                    showCompletePanel = true;
+                    timeToShowCompletePanel = remainingTime - DelayBetweenCompletionAndPanel;
+                }
+                else if (showCompletePanel && !completePanelShown && remainingTime <= timeToShowCompletePanel)
+                {
+                    levelCompletePanel.SetActive(true);
+                    completePanelShown = true;
+                }
+
+                if (remainingTime < ShowTimerRedTime)
                 {
                     timerText.color = Color.red;
                 }
