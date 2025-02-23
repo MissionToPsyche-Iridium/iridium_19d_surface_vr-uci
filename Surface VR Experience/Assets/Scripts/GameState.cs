@@ -66,7 +66,6 @@ public class GameState : MonoBehaviour
     public int get_progress(string scene_name)
     {
        (float unclicked_objects, float num_objects) = (scene_interactables_and_count[scene_name].Item1.Count, scene_interactables_and_count[scene_name].Item2);
-        Debug.Log(unclicked_objects);
         return (int)((num_objects-unclicked_objects)/num_objects*100);
     }
 }
