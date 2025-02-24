@@ -56,6 +56,11 @@ public class TriggerInfoPanel : MonoBehaviour
                 GameState.metal_panels.Remove(panelName);
                 if (GameState.metal_panels.Count == 0) { Debug.Log("Clicked all items in metal crater!"); }
             }
+            else if (sceneName == "PsycheSpacecraftSatellite")
+            {
+                GameState.spacecraft_panels.Remove(panelName);
+                if (GameState.spacecraft_panels.Count == 0) { Debug.Log("Clicked all items in spacecraft scene!"); }
+            }
         }
 
     }
