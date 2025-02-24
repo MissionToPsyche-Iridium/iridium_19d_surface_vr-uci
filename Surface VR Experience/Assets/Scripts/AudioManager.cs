@@ -46,7 +46,7 @@ public class AudioManager : MonoBehaviour
 
         if (sceneName == "MainMenu")
            currentAudioClip = mainMenuMusic;
-        else if (sceneName == "PsycheHobaCrater" || sceneName == "PsycheMetalCraterPOC" || sceneName == "PsycheHobaCraterLarge")
+        else if (sceneName == "PsycheHobaCrater" || sceneName == "PsycheMetalCraterPOC" || sceneName == "PsycheHobaCraterLarge" || sceneName == "PsycheSpacecraftSatellite")
         {
             StartCoroutine(FadeOutAndChangeMusic(gameSceneMusic));
             return;
