@@ -128,7 +128,7 @@ Open-source contributors whose tools and libraries we've utilized. <br>
 **For any inquiries, please contact** <br>
 David Branson <br>
 Email:      dbransonuci@gmail.com <br>
-Linkedin: linkedin.com/dbransonuci <br><br>
+Linkedin: https://www.linkedin.com/dbransonuci <br><br>
 
 Dylan Peppard <br>
 Email:      pepparddylan@yahoo.com <br>
@@ -146,7 +146,7 @@ Linkedin: https://www.linkedin.com/in/armanicardenas <br><br>
 
 Caroline David <br>
 Email:      carolinehudavid@gmail.com <br>
-Linkedin: https://www.linkedin.com/in/carolinehudavid?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app <br><br>
+Linkedin: https://www.linkedin.com/in/carolinehudavid/ <br><br>
 
 **PSYCHE** <br>
 ![ascii-art](https://github.com/user-attachments/assets/c1ce6681-3cf1-4fed-b103-555c487d8520)
