@@ -15,7 +15,7 @@ public class CreditsPanel : MonoBehaviour
     [SerializeField] GameObject Credits; //Reference to the Credits panel
     [SerializeField] GameObject ObjectInteractionTutorial; //Reference to the Credits panel
     public RectTransform CreditsText;
-    public Vector2 originalPosition = new Vector2(0, 400); //the original credit text position from Inspector
+    public Vector2 originalPosition = new Vector2(0, -350); //the original credit text position from Inspector
 
 
 
