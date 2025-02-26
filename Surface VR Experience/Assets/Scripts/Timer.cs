@@ -12,6 +12,7 @@ public class Timer : MonoBehaviour
     [SerializeField] private string nextScene;
     [SerializeField] GameObject inGameMenu;
     [SerializeField] GameObject levelCompletePanel;
+    [SerializeField] GameObject fullyCompletePanel;
 
     public float remainingTime;
     private bool showCompletePanel = false;
@@ -51,7 +52,12 @@ public class Timer : MonoBehaviour
                 }
                 else if (showCompletePanel && !completePanelShown && remainingTime <= timeToShowCompletePanel)
                 {
-                    levelCompletePanel.SetActive(true);
+                    if (GameState.Instance.get_progress("PsycheHobaCrater") + GameState.Instance.get_progress("PsycheHobaCraterLarge") + GameState.Instance.get_progress("PsycheMetalCraterPOC") + GameState.Instance.get_progress("PsycheSpacecraftSatellite") == 400) {
+                        fullyCompletePanel.SetActive(true);
+                    }
+                    else {
+                        levelCompletePanel.SetActive(true);
+                    }
                     completePanelShown = true;
                 }
 

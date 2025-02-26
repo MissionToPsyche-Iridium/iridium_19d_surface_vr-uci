@@ -88,15 +88,16 @@ Debug Tip: If the load time of the scene is large, the first run of that scene m
 2. Build the project in Unity (open project/file/build settings/build) assuming the platform has been set to Android, and the player settings are properly configured. <br>
 3. Install Android SDK Platform tools: https://developer.android.com/tools/releases/platform-tools<br>
 4. Open the command console and navigate to the apk’s root directory <br>
-5. Ensure device is connected to pc via quest link. <br>
-5. Issue the following commands via command line: <br>
+5. Issue the following command via command line: <br>
 $ adb start-server<br>
+6. Ensure device is connected to pc via quest link and accept all requests to enable debugging on the headset.<br>
+7. Issue the following command via command line: <br>
 $ adb install projectname.apk<br>
-6. After a moment the APK should install and become available on the headset.<br>
-7. Visit the following link for more information and commands for the Android Debug Bridge (ADB): https://developer.android.com/tools/adb <br>
+8. After a moment the APK should install and become available on the headset.<br>
+9. Visit the following link for more information and commands for the Android Debug Bridge (ADB): https://developer.android.com/tools/adb <br>
 
 **Running APKs on the Meta Quest Headset** <br>
-1. Navigate to Library/applications/unknown sources (found in drop down menu). <br>
+1. Navigate to Library/applications/unknown sources. <br>
 2. Click on the application to run. <br><br>
 
 
