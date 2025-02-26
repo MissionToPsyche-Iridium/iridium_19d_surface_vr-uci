@@ -115,7 +115,7 @@ Step-by-step Commit Instructions:
 2. Issue ‘git lfs install’ (if you haven't already done so) <br>
 2. Issue ‘git lfs track path/to/file’ <br>
 3. Issue ‘git add .gitattributes’ <br>
-4. Issue ‘add path/to/file’ <br>
+4. Issue ‘git add path/to/file’ <br>
 5. Issue ‘git commit -m “your commit message”’ <br><br>
 
 **Gameplay Tutorial Video** <br>
