@@ -11,7 +11,7 @@ public class MenuToggle : MonoBehaviour
     {
         if (toggleMenuAction == null)
         {
-            Debug.LogError("ToggleMenuAction is not assigned in the Inspector!");
+            // Debug.LogError("ToggleMenuAction is not assigned in the Inspector!");
             return;
         }
 
@@ -32,7 +32,7 @@ public class MenuToggle : MonoBehaviour
     {
         if (menu == null)
         {
-            Debug.LogError("Menu GameObject is not assigned or found!");
+            // Debug.LogError("Menu GameObject is not assigned or found!");
             return;
         }
 
@@ -44,7 +44,7 @@ public class MenuToggle : MonoBehaviour
     {
         if (menu == null)
         {
-            Debug.LogError("Menu GameObject is not assigned or found!");
+            // Debug.LogError("Menu GameObject is not assigned or found!");
             return;
         }
 
