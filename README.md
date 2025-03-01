@@ -83,7 +83,7 @@ b. Accept all popups to allow usb debugging. <br>
 Debug Tip: If the load time of the scene is large, the first run of that scene may prevent the scene from properly displaying. You may need to stop the running scene after a few moments, then press play again. <br>
 
 **Game Installation / Installing APKs to the Meta Quest** <br>
-**Note: Steps 1-2 can be skipped by downloading the "19d_surface_vr_uci_Surface_VR_Experience.apk" from this repositorie's build folder.**
+**Note: Steps 1-2 can be skipped by downloading the "19d_surface_vr_uci_Surface_VR_Experience.apk" from this repositorie's root directory.**
 1. Build the application for Android, see: https://docs.unity3d.com/6000.0/Documentation/Manual/android-BuildProcess.html <br>
 2. Build the project in Unity (open project/file/build settings/build) assuming the platform has been set to Android, and the player settings are properly configured. <br>
 3. Install Android SDK Platform tools: https://developer.android.com/tools/releases/platform-tools<br>
