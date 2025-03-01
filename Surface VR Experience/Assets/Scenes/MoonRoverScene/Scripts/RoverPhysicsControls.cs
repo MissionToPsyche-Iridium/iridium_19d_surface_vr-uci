@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PhysicsController : MonoBehaviour
 {
@@ -30,6 +31,7 @@ public class PhysicsController : MonoBehaviour
     [Header("Input")]
     private float moveInput = 0;
     private float steerInput = 0; 
+    private bool brakeInput = false; 
 
 
     [Header("Car Settings")]
@@ -51,8 +53,31 @@ public class PhysicsController : MonoBehaviour
     [SerializeField] private float maxSteeringAngle = 30f; 
 
 
+    [Header("Input Actions")]
+    [SerializeField] private InputActionProperty moveAction;
+    [SerializeField] private InputActionProperty steerAction;
+    [SerializeField] private InputActionProperty brakeAction;
+
+
+
 
     #region  Unity Functions
+
+    private void OnEnable() 
+    {
+        moveAction.action.Enable();
+        steerAction.action.Enable();
+        brakeAction.action.Enable();
+    }
+
+    private void OnDisable() 
+    {
+        moveAction.action.Disable();
+        steerAction.action.Disable();
+        brakeAction.action.Disable();
+    }
+
+
 
     // Start is called before the first frame update
     private void Start()
@@ -84,8 +109,10 @@ public class PhysicsController : MonoBehaviour
 
     private void GetPlayerInput()
     {
-        moveInput = Input.GetAxis("Vertical");
-        steerInput = Input.GetAxis("Horizontal");
+        moveInput = moveAction.action.ReadValue<float>();
+        steerInput = steerAction.action.ReadValue<float>();
+
+        brakeInput = brakeAction.action.ReadValue<float>() > 0.5f;
     }
 
     #endregion
@@ -110,14 +137,14 @@ public class PhysicsController : MonoBehaviour
         {
             carRB.AddForceAtPosition(acceleration * moveInput * carRB.transform.forward, accelerationPoint.position, ForceMode.Acceleration);
         }
-        Debug.Log(currentCarLocalVelocity.z); 
+        //Debug.Log(currentCarLocalVelocity.z); 
         
     }
 
     private void Deceleration()
     {
 
-        carRB.AddForce((Input.GetKey(KeyCode.Space) ? brakingDeceleration : deceleration) * carVelocityRatio * -carRB.transform.forward, ForceMode.Acceleration);
+        carRB.AddForce((brakeInput ? brakingDeceleration : deceleration) * carVelocityRatio * -carRB.transform.forward, ForceMode.Acceleration);
     }
 
     private void Turn()
@@ -131,7 +158,7 @@ public class PhysicsController : MonoBehaviour
         float currentSidewaysSpeed = currentCarLocalVelocity.x; 
         
 
-        float dragMagnitude = -currentSidewaysSpeed *  (Input.GetKey(KeyCode.Space) ? brakingDragCoefficient : dragCoefficient);
+        float dragMagnitude = -currentSidewaysSpeed *  (brakeInput ? brakingDragCoefficient : dragCoefficient);
 
         Vector3 dragForce = transform.right * dragMagnitude;
 
