@@ -1,7 +1,7 @@
 using Unity.XR.CoreUtils;
 using UnityEngine.Assertions;
 
-namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
+namespace UnityEngine.XR.Interaction.Toolkit
 {
     /// <summary>
     /// A version of action-based continuous movement that automatically controls the frame of reference that

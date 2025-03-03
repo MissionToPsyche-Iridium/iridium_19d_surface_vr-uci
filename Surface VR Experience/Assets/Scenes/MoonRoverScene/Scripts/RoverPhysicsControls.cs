@@ -63,20 +63,7 @@ public class PhysicsController : MonoBehaviour
 
     #region  Unity Functions
 
-    private void OnEnable() 
-    {
-        moveAction.action.Enable();
-        steerAction.action.Enable();
-        brakeAction.action.Enable();
-    }
-
-    private void OnDisable() 
-    {
-        moveAction.action.Disable();
-        steerAction.action.Disable();
-        brakeAction.action.Disable();
-    }
-
+   
 
 
     // Start is called before the first frame update
@@ -288,6 +275,26 @@ public class PhysicsController : MonoBehaviour
 
     #endregion
 
+    
+    public void SetRoverActive(bool isActive)
+    {
+        if (isActive)
+        {
+            moveAction.action.Enable();
+            steerAction.action.Enable(); 
+            brakeAction.action.Enable(); 
+        }
+
+        else
+        {
+            moveAction.action.Disable(); 
+            steerAction.action.Disable();
+            brakeAction.action.Disable(); 
+        }
+    }
+
+   
+    
     
 
 }
