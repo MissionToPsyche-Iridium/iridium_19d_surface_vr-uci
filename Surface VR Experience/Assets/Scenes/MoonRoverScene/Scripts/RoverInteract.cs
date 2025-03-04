@@ -34,7 +34,9 @@ public class RoverEnterInteraction : MonoBehaviour
     public ActionBasedSnapTurnProvider snapTurnProvider;  
 
   
-  
+    [Header("UI Panels")]
+    public GameObject roverHoverTooltip;
+    public GameObject inRoverTooltip; 
 
 
     void OnEnable()
@@ -82,6 +84,12 @@ public class RoverEnterInteraction : MonoBehaviour
     {
         isHovering = true;
 
+        if (!isInsideRover)
+        {
+            roverHoverTooltip.SetActive(true); 
+        }
+
+
         var interactor = arg.interactorObject as XRBaseControllerInteractor;
         if (interactor != null && interactor.xrController != null)
         {
@@ -92,6 +100,7 @@ public class RoverEnterInteraction : MonoBehaviour
     private void OnHoverExit(HoverExitEventArgs arg)
     {
         isHovering = false;
+        roverHoverTooltip.SetActive(false); 
     }
 
     private void EnterRover()
@@ -100,6 +109,8 @@ public class RoverEnterInteraction : MonoBehaviour
         StartCoroutine(FadeToBlackAndMovePlayer());
     }
 
+
+    private bool hasShownBefore = false; 
     private IEnumerator FadeToBlackAndMovePlayer()
     {
         //fade in
@@ -112,14 +123,34 @@ public class RoverEnterInteraction : MonoBehaviour
 
         playerXROrigin.transform.SetParent(roverSeatTransform, worldPositionStays: false);
 
+        playerXROrigin.transform.localScale = Vector3.one;
+
+
        roverController.SetRoverActive(true);
+
+       if (dynamicMoveProvider != null) dynamicMoveProvider.enabled = false;
+       if (snapTurnProvider != null) snapTurnProvider.enabled = false;
+
+
 
        isInsideRover = true; 
 
-        if (dynamicMoveProvider != null) dynamicMoveProvider.enabled = false;
-        if (snapTurnProvider != null) snapTurnProvider.enabled = false;
+       if (!hasShownBefore)
+       {
+            inRoverTooltip.SetActive(true);
+            hasShownBefore = true; 
 
+            StartCoroutine(HideRoverPanel(10f));
+       }
+
+        
        yield return StartCoroutine(Fade(1f, 0f));
+    }
+
+    private IEnumerator HideRoverPanel(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        inRoverTooltip.SetActive(false); 
     }
 
 
@@ -136,6 +167,9 @@ public class RoverEnterInteraction : MonoBehaviour
         roverController.SetRoverActive(false);
 
         playerXROrigin.transform.SetParent(null, true);
+
+        playerXROrigin.transform.localScale = Vector3.one;
+
 
         Vector3 exitPosition; 
         if (roverExitPosition != null)
