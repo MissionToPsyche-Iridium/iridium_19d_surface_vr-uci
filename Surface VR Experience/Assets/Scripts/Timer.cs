@@ -52,10 +52,10 @@ public class Timer : MonoBehaviour
                 }
                 else if (showCompletePanel && !completePanelShown && remainingTime <= timeToShowCompletePanel)
                 {
-                    if (GameState.Instance.get_progress("PsycheHobaCrater") + GameState.Instance.get_progress("PsycheHobaCraterLarge") + GameState.Instance.get_progress("PsycheMetalCraterPOC") + GameState.Instance.get_progress("PsycheSpacecraftSatellite") == 400) {
+                    if (fullyCompletePanel && GameState.Instance.get_progress("PsycheHobaCrater") + GameState.Instance.get_progress("PsycheHobaCraterLarge") + GameState.Instance.get_progress("PsycheMetalCraterPOC") + GameState.Instance.get_progress("PsycheSpacecraftSatellite") == 400) {
                         fullyCompletePanel.SetActive(true);
                     }
-                    else {
+                    else if (levelCompletePanel) {
                         levelCompletePanel.SetActive(true);
                     }
                     completePanelShown = true;

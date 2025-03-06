@@ -17,12 +17,14 @@ public class GameState : MonoBehaviour
     public readonly static int NumberHCLObjects = 5;
     public readonly static int NumberMetalCraterObjects = 3;
     public readonly static int NumberSpacecraftObjects = 6;
+    public readonly static int NumberMoonObjects = 1; // Actually 0, but would cause an error since its a denominator
     
     // HashSets of infoPanels in each scene. When an object is clicked, they're removed from the HashSet. Reset when "START" is pressed.
     public static HashSet<string> hoba_panels = new HashSet<string> { "Information Panel", "Information Panel2", "Information Panel3" };
     public static HashSet<string> HCL_panels = new HashSet<string> { "Information Panel", "Information Panel1", "Information Panel2", "Information Panel3", "Information Panel4" };
     public static HashSet<string> metal_panels = new HashSet<string> { "Information Panel", "Information Panel2", "Information Panel3" };
     public static HashSet<string> spacecraft_panels = new HashSet<string> { "Information Panel Asteroid", "Information Panel Magnet", "Information Panel Magnet2", "Information Panel DSOC", "Information Panel Neutron", "Information Panel Magnet3" };
+    public static HashSet<string> moon_panels = new HashSet<string> {  };
 
     // Used by Progress.cs to calculate the number of remaining unclicked objects over the total number in the scene.
     private Dictionary<string, (HashSet<string>, int)> scene_interactables_and_count;
@@ -51,7 +53,8 @@ public class GameState : MonoBehaviour
             { "PsycheHobaCrater", (hoba_panels, NumberHobaObjects) },
             { "PsycheHobaCraterLarge", (HCL_panels, NumberHCLObjects)},
             { "PsycheMetalCraterPOC", (metal_panels, NumberMetalCraterObjects)},
-            { "PsycheSpacecraftSatellite", (spacecraft_panels, NumberSpacecraftObjects) }
+            { "PsycheSpacecraftSatellite", (spacecraft_panels, NumberSpacecraftObjects) },
+            { "MoonRoverScene", (moon_panels, NumberMoonObjects) }
         };
     }
 
@@ -68,6 +71,7 @@ public class GameState : MonoBehaviour
         HCL_panels.UnionWith(new string[] { "Information Panel", "Information Panel1", "Information Panel2", "Information Panel3", "Information Panel4" });
         metal_panels.UnionWith(new string[] { "Information Panel", "Information Panel2", "Information Panel3" });
         spacecraft_panels.UnionWith(new string[] { "Information Panel Asteroid", "Information Panel Magnet", "Information Panel Magnet2", "Information Panel DSOC", "Information Panel Neutron", "Information Panel Magnet3" });
+        moon_panels.UnionWith(new string[] {  });
     }
 
     public int get_progress(string scene_name)

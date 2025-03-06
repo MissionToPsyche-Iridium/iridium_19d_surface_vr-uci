@@ -8230,7 +8230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7536323491059977024, guid: cd1982119b515f247a22de7174e636b8, type: 3}
       propertyPath: nextScene
-      value: MainMenu
+      value: MoonRoverScene
       objectReference: {fileID: 0}
     - target: {fileID: 7536323491059977024, guid: cd1982119b515f247a22de7174e636b8, type: 3}
       propertyPath: inGameMenu
@@ -9623,7 +9623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelCompletePanel: {fileID: 1131086239}
-  nextScene: MainMenu
+  nextScene: MoonRoverScene
 --- !u!1 &1155256640
 GameObject:
   m_ObjectHideFlags: 0
