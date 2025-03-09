@@ -11,6 +11,7 @@ public class GameState : MonoBehaviour
     //public static GameState Instance {get; private set; }
     public static bool isEventMode = true;
     public static float timeBeforeReset = -1;
+    public static bool tutorialShown = false;
 
     // Number of objects in each scene
     public readonly static int NumberHobaObjects = 3;
@@ -68,6 +69,7 @@ public class GameState : MonoBehaviour
         HCL_panels.UnionWith(new string[] { "Information Panel", "Information Panel1", "Information Panel2", "Information Panel3", "Information Panel4" });
         metal_panels.UnionWith(new string[] { "Information Panel", "Information Panel2", "Information Panel3" });
         spacecraft_panels.UnionWith(new string[] { "Information Panel Asteroid", "Information Panel Magnet", "Information Panel Magnet2", "Information Panel DSOC", "Information Panel Neutron", "Information Panel Magnet3" });
+        tutorialShown = false;
     }
 
     public int get_progress(string scene_name)
