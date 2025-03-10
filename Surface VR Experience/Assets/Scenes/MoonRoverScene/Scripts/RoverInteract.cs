@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
 using System.Collections;
 
-
+[ExecuteInEditMode]
 public class RoverEnterInteraction : MonoBehaviour
 {
     [Header("References")]
