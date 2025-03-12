@@ -7,7 +7,9 @@ This work was created in partial fulfillment of University of California, Irvine
 This repository contains the source code, and documentation for the NASA ASU Capstone Project. The project is a collaborative effort between Arizona State University, NASA, and students capstone participants from the University of California, Irvine with the aim to create a virtual reality experience to simulate standing on another planetary body by showcasing the actual data and what is already known about other non-Earth bodies.<br>
 
 **Project Description** <br>
-Surface VR : Experience is a first person VR simulation of the surface and orbit of Asteroid 16 Psyche and the surface of the Moon. The project  features two gameplay modes: event mode, and play mode (described in the gameplay section).<br>
+Surface VR : Experience is a first person VR simulation of the surface and orbit of Asteroid 16 Psyche, as well as, the surface of the Moon. The project  features two gameplay modes: event mode (timed levels), and play mode (untimed levels). Players may select from a variety of scenes from the base of a deep metallic crater to flying through space as the Psyche Spacecraft orbits Asteroid Psyche. Players are immersed in a 360 degree virtual world where they interact with objects to learn more about them. Discover all of the objects in the game to win!<br>
+
+---
 
 **Controls** <br>
 Menu Interaction / Object interaction: Left Controller Trigger or Right Controller Trigger.  <br>
@@ -30,20 +32,10 @@ In-Game Menu / Pause: Left controller menu button. <br>
 
 ***Scene Progress:*** Progress within a scene is displayed at the top-center of the player’s camera as a percentage of the number of objects that have been interacted with. Upon 100% completion, the game will allow the player to read their current information panel, then a new popup will appear prompting them to either continue to the next scene, or remain on the same scene.
 
-***Object interaction:*** Interactable objects are located within each game scene. They can be identified by yellow strobing lights. Once the player hovers over an interactable object with their controller, it will vibrate, and the raycast will change color from white to blue. Clicking on an object will prompt an information panel to popup that will automatically close after 10 seconds.<br>
+***Object interaction:*** Interactable objects are located within each game scene. They can be identified by yellow strobing lights. Once the player hovers over an interactable object with their controller, it will vibrate, and the raycast will change color from white to blue. Clicking on an object will prompt an information panel to popup that will automatically close after 10 seconds.
 ![Object Interaction Tutorial (when first open scene)](https://github.com/user-attachments/assets/f0a74310-c46d-4be0-b9c0-d1faac6e0dae)
 
-**-----------------------------------------------------------------------------------------------------------------------------** <br>
-**Team Members** <br>
-David Branson <br>
-Armani Cardenas <br>
-Caroline David <br>
-Yeseul Lim <br>
-Dylan Gilbert Peppard <br>
-Jonathan Vigil <br>
-
-**University name** <br>
-University of California, Irvine (UCI)
+---
 
 **Screenshots (App)** <br>
 ![1231image](https://github.com/user-attachments/assets/68596e09-ebf6-4e5d-b62a-0301f8c4c01d)
@@ -58,7 +50,8 @@ https://youtu.be/4qvfd2WOo3U<br>
 **Gameplay Tutorial Video** <br>
 Coming Soon <br>
 
-**-----------------------------------------------------------------------------------------------------------------------------** <br>
+---
+
 **Building the project** <br>
 
 1. Clone the project on your local system by using the project’s web URL: https://github.com/MissionToPsyche-Iridium/iridium_19d_surface_vr-uci.git <br>
@@ -69,7 +62,8 @@ Note: System Requirements for Unity 6: https://docs.unity3d.com/Manual/system-re
 5. The project should now be listed under the projects. Click to open the project. <br>
 Note: The first run of the project may take several minutes as it imports and installs the various packages required for the project. <br><br>
 
-**-----------------------------------------------------------------------------------------------------------------------------** <br>
+---
+
 **Frameworks, IDE, Programming languages, and libraries used in the project.** <br>
 **Note: This project was developed for the Meta Quest Virtual Reality Headsets (2, 3S, and 3).** <br>
 
@@ -93,7 +87,8 @@ Any IDE supporting C#. <br>
 **Other Tools**
 Git, Bash, and Vim <br><br>
 
-**-----------------------------------------------------------------------------------------------------------------------------** <br>
+---
+
 **Enabling development mode on Meta Quest.**
 1. Setup and verify an oculus developer account at https://developer.oculus.com/ <br>
 2. Download and install Meta Horizon app on iOS or Android to mobile phone. <br>
@@ -129,7 +124,8 @@ $ adb install projectname.apk<br>
 1. Navigate to Library/applications/unknown sources. <br>
 2. Click on the application to run. <br><br>
 
-**-----------------------------------------------------------------------------------------------------------------------------** <br>
+---
+
 **Known issues** <br>
 
 **Large Files**
@@ -146,6 +142,19 @@ Step-by-step Commit Instructions:
 4. Issue ‘git add path/to/file’ <br>
 5. Issue ‘git commit -m “your commit message”’ <br><br>
 
+---
+
+**Team Members** <br>
+David Branson <br>
+Armani Cardenas <br>
+Caroline David <br>
+Yeseul Lim <br>
+Dylan Gilbert Peppard <br>
+Jonathan Vigil <br>
+
+**University name** <br>
+University of California, Irvine (UCI)
+
 **Acknowledgements** <br>
 NASA and Arizona State University for providing this incredible opportunity. <br>
 Our Senior capstone course staff. <br>
@@ -161,10 +170,10 @@ Email:      pepparddylan@yahoo.com <br>
 Linkedin: https://www.linkedin.com/in/dylan-peppard-896713132/ <br><br>
 
 Jonathan Vigil <br>
-Email:      jvigil1738@gmail.com <br>
+Email:      jvigil1738@gmail.com <br><br>
 
 Yeseul Lim <br>
-Email:      yeseullim1@gmail.com <br>
+Email:      yeseullim1@gmail.com <br><br>
 
 Armani Cardenas <br>
 Email:      armanicardenas12@gmail.com <br>
