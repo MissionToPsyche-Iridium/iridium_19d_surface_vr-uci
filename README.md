@@ -7,7 +7,7 @@ This work was created in partial fulfillment of University of California, Irvine
 This repository contains the source code, and documentation for the NASA ASU Capstone Project. The project is a collaborative effort between Arizona State University, NASA, and students capstone participants from the University of California, Irvine with the aim to create a virtual reality experience to simulate standing on another planetary body by showcasing the actual data and what is already known about other non-Earth bodies.<br>
 
 **Project Description** <br>
-Surface VR : Experience is a first person VR simulation of the surface and orbit of Asteroid 16 Psyche, as well as, the surface of the Moon. The project  features two gameplay modes: event mode (timed levels), and play mode (untimed levels). Players may select from a variety of scenes from the base of a deep metallic crater to flying through space as the Psyche Spacecraft orbits Asteroid Psyche. Players are immersed in a 360 degree virtual world where they interact with objects to learn more about them. Discover all of the objects in the game to win!<br>
+Surface VR : Experience is a first person VR simulation of the surface and orbit of Asteroid 16 Psyche, as well as, the surface of the Moon. The project  features two gameplay modes: event mode (timed levels), and play mode (untimed levels). Players may select from a variety of scenes, from the base of a deep metallic crater, to flying through space as the Psyche Spacecraft orbits the Asteroid Psyche. Players are immersed in a 360 degree virtual world where they interact with objects to learn more about them. Discover all of the objects in the game to win!<br>
 
 ---
 
