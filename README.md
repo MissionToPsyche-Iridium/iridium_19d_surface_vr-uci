@@ -4,17 +4,36 @@
 This work was created in partial fulfillment of University of California, Irvine Capstone Courses 191A and 191B. The work is a result of the Psyche Student Collaborations component of NASA’s Psyche Mission (https://psyche.asu.edu). “Psyche: A Journey to a Metal World” [Contract number NNM16AA09C] is part of the NASA Discovery Program mission to solar system targets. Trade names and trademarks of ASU and NASA are used in this work for identification only. Their usage does not constitute an official endorsement, either expressed or implied, by Arizona State University or National Aeronautics and Space Administration. The content is solely the responsibility of the authors and does not necessarily represent the official views of ASU or NASA. <br>
 
 **Overview** <br>
-This repository contains the source code, and documentation for the NASA ASU Capstone Project. The project is a collaborative effort between Arizona State University, NASA, and students capstone participants from the University of California, Irvine with the aim to create a virtual reality experience to simulate standing on another planetary body by showcasing the actual data and what is already known about other non-Earth bodies.
+This repository contains the source code, and documentation for the NASA ASU Capstone Project. The project is a collaborative effort between Arizona State University, NASA, and students capstone participants from the University of California, Irvine with the aim to create a virtual reality experience to simulate standing on another planetary body by showcasing the actual data and what is already known about other non-Earth bodies.<br>
 
 **Project Description** <br>
-Coming Soon <br>
+Surface VR : Experience is a first person VR simulation of the surface and orbit of Asteroid 16 Psyche and the surface of the Moon. The project  features two gameplay modes: event mode, and play mode (described in the gameplay section).<br>
 
 **Controls** <br>
-Coming Soon <br>
+Menu Interaction / Object interaction: Left Controller Trigger or Right Controller Trigger.  <br>
+Player Movement: Player is stationary on all scenes except for the Moon scene. <br>
+Camera Movement: Camera movement is tied to the position of the VR headset. Players may look in all directions and turn their body to view a full 360 degree environment. <br>
+In-Game Menu / Pause: Left controller menu button. <br>
 
 **Gameplay** <br>
-Coming Soon <br>
 
+***Main Menu:***  From the main menu, users may view information about each scene by pressing the “i” button. Users may select from event and play modes. Users may cycle through game scenes then press play to begin the scene that is currently displayed on the scene carousel. A game tutorial panel is visible from the main menu. <br>
+![Main Menu](https://github.com/user-attachments/assets/09d929e2-a616-4431-911c-394a2f3e51d2)
+
+***Event Mode:*** This is the default mode. In event mode, the user is given two minutes to explore and interact with each scene. After two minutes, the game will transition to the next scene. The user may also move to the next scene by interacting with all objects on that scene. <br>
+
+***Play Mode:*** This mode allows players to spend unlimited time within the game scenes.<br>
+![Play Mode](https://github.com/user-attachments/assets/ca62a2dd-93d5-4cbf-a1ae-3a7265ae79fa)
+
+***In-Game Menu:*** While playing a scene, the user may press the left controller menu button to pause, restart, or quit and return to the main menu. Restart is unavailable on event mode.<br>
+![Event In-Game Menu](https://github.com/user-attachments/assets/0a44458c-5557-4009-af75-1bd15e0c2461)
+
+***Scene Progress:*** Progress within a scene is displayed at the top-center of the player’s camera as a percentage of the number of objects that have been interacted with. Upon 100% completion, the game will allow the player to read their current information panel, then a new popup will appear prompting them to either continue to the next scene, or remain on the same scene.
+
+***Object interaction:*** Interactable objects are located within each game scene. They can be identified by yellow strobing lights. Once the player hovers over an interactable object with their controller, it will vibrate, and the raycast will change color from white to blue. Clicking on an object will prompt an information panel to popup that will automatically close after 10 seconds.<br>
+![Object Interaction Tutorial (when first open scene)](https://github.com/user-attachments/assets/f0a74310-c46d-4be0-b9c0-d1faac6e0dae)
+
+**-----------------------------------------------------------------------------------------------------------------------------** <br>
 **Team Members** <br>
 David Branson <br>
 Armani Cardenas <br>
@@ -27,7 +46,17 @@ Jonathan Vigil <br>
 University of California, Irvine (UCI)
 
 **Screenshots (App)** <br>
-Coming Soon <br><br>
+![1231image](https://github.com/user-attachments/assets/68596e09-ebf6-4e5d-b62a-0301f8c4c01d)
+![image](https://github.com/user-attachments/assets/824652ae-f72d-4673-9d9b-25a98bd258cc)
+![HobaCraterLarge](https://github.com/user-attachments/assets/095ebd9a-7e8b-4e4e-a8d2-a37b0f83b80b)
+![SpacecraftScene](https://github.com/user-attachments/assets/8fda8414-6299-448d-823c-075220cf26df)
+<br><br>
+
+**Gameplay Teaser Video** <br>
+https://youtu.be/4qvfd2WOo3U<br>
+
+**Gameplay Tutorial Video** <br>
+Coming Soon <br>
 
 **-----------------------------------------------------------------------------------------------------------------------------** <br>
 **Building the project** <br>
@@ -100,7 +129,6 @@ $ adb install projectname.apk<br>
 1. Navigate to Library/applications/unknown sources. <br>
 2. Click on the application to run. <br><br>
 
-
 **-----------------------------------------------------------------------------------------------------------------------------** <br>
 **Known issues** <br>
 
@@ -117,9 +145,6 @@ Step-by-step Commit Instructions:
 3. Issue ‘git add .gitattributes’ <br>
 4. Issue ‘git add path/to/file’ <br>
 5. Issue ‘git commit -m “your commit message”’ <br><br>
-
-**Gameplay Tutorial Video** <br>
-Coming Soon <br>
 
 **Acknowledgements** <br>
 NASA and Arizona State University for providing this incredible opportunity. <br>
