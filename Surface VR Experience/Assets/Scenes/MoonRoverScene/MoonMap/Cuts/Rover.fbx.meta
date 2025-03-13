@@ -1,54 +1,9 @@
 fileFormatVersion: 2
-guid: b70705e2b954fcf498302bb7f1928ed6
+guid: 009da8818992b214883715298d803359
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Antenne.002
-    second: {fileID: 2100000, guid: 7d5ac9be6be2f2e44a81575c0afd10db, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: BackParts.002
-    second: {fileID: 2100000, guid: 4c69078b57f661e4984859d3154ffa39, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Chassis.002
-    second: {fileID: 2100000, guid: 68a61a9fabe8dee46ae7da7d31b62794, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: ControlPanel.002
-    second: {fileID: 2100000, guid: 8db7b11400cc3b9409bd3ed063ec31be, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Damping.002
-    second: {fileID: 2100000, guid: 5ffd89c8b87a8dd46b39e6205d84e2b8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: FrontParts.002
-    second: {fileID: 2100000, guid: 292e88c5c19aa3c44b87969c1b0c4db3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Kameralinse.002
-    second: {fileID: 2100000, guid: 6aa145c6dd9743e40aaae168ff85d1d8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Seats.002
-    second: {fileID: 2100000, guid: 39ab5b6058f715c4f9174032037275bd, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Wheels.002
-    second: {fileID: 2100000, guid: e7ab21589aac7bf4cb0372c1e9d59bdb, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

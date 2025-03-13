@@ -312,7 +312,6 @@ QualitySettings:
     terrainMaxTrees: 50
     excludedTargetPlatforms:
     - Server
-    - Android
   - serializedVersion: 3
     name: Meta Quest 2
     pixelLightCount: 4
