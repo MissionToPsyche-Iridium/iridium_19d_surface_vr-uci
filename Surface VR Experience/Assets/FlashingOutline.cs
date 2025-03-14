@@ -7,7 +7,7 @@ public class SmoothFlashingOutline : MonoBehaviour
     [SerializeField] private float outlineWidth = 5f; 
 
     private Outline outline;
-    private float targetAlpha = 0f; 
+    // private float targetAlpha = 0f; 
     private bool isFadingIn = true;
 
     private void Start()

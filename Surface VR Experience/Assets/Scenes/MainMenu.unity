@@ -172,11 +172,13 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9fc8d1afb61d80d43bfdde21fb039382, type: 3}
   - {fileID: 21300000, guid: c4926df1152d49848bdb3df461ef7f78, type: 3}
   - {fileID: 21300000, guid: bede1d195da8d0a49b7a683b5bdd82a2, type: 3}
+  - {fileID: 21300000, guid: 90568e244f029c84e8cfba8ecc137dc0, type: 3}
   infoSceneNames:
   - PsycheHobaCrater
   - PsycheMetalCraterPOC
   - PsycheHobaCraterLarge
   - PsycheSpacecraftSatellite
+  - MoonRoverScene
   infoSceneDescriptions:
   - "Crater made to resemble the Hoba Meteorite, which impacted Earth in the Otjozondjupa
     Region of Namibia less than 80,000 years ago. Psyche\u2019s surface is hypothesized
@@ -194,6 +196,7 @@ MonoBehaviour:
     The asteroid will also be visible from the Spacecraft's space orbit. Interactable
     objects on the Psyche Spacecraft will be highlighted red, blue, orange, yellow,
     and pink.
+  - Drive a rover on the surface of the moon.
   infoNextButton: {fileID: 1489948530}
   infoPreviousButton: {fileID: 804003674}
   infoHomeButton: {fileID: 242650182}
@@ -10197,11 +10200,13 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9fc8d1afb61d80d43bfdde21fb039382, type: 3}
   - {fileID: 21300000, guid: c4926df1152d49848bdb3df461ef7f78, type: 3}
   - {fileID: 21300000, guid: bede1d195da8d0a49b7a683b5bdd82a2, type: 3}
+  - {fileID: 21300000, guid: 90568e244f029c84e8cfba8ecc137dc0, type: 3}
   sceneNames:
   - PsycheHobaCrater
   - PsycheMetalCraterPOC
   - PsycheHobaCraterLarge
   - PsycheSpacecraftSatellite
+  - MoonRoverScene
   nextButton: {fileID: 0}
   previousButton: {fileID: 0}
   startButton: {fileID: 0}
