@@ -12,6 +12,8 @@ public class PhysicsController : MonoBehaviour
     [SerializeField] private LayerMask ground; 
     [SerializeField] private Transform accelerationPoint; 
     [SerializeField] private GameObject[] tires = new GameObject[4];
+    [SerializeField] private GameObject[] fenders = new GameObject[4];
+
     [SerializeField] private GameObject[] frontTireParents = new GameObject[2];
  
 
@@ -251,8 +253,14 @@ public class PhysicsController : MonoBehaviour
                 carRB.AddForceAtPosition(netForce * rayPoints[i].up, rayPoints[i].position);
 
                 //Visuals
+                Vector3 tirePos = hit.point + rayPoints[i].up * wheelRadius; 
 
                 SetTirePosition(tires[i], hit.point + rayPoints[i].up * wheelRadius);
+
+                if (fenders[i] != null)
+                {
+                    fenders[i].transform.position = tirePos + rayPoints[i].up * 0.7f; 
+                }
 
                 Debug.DrawLine(rayPoints[i].position, hit.point, Color.red);
             }
