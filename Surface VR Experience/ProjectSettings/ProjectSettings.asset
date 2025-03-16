@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Iridium
-  productName: com.Surface_VR_Experience
+  productName: FinalMap
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -143,6 +143,7 @@ PlayerSettings:
   bundleVersion: 0.1
   preloadedAssets:
   - {fileID: -202244795497189576, guid: 7d2471d79b023d946b0cf72ef804d45b, type: 2}
+  - {fileID: 11400000, guid: 6d2fa1fd6f5cb4140a0dca4b1e509e38, type: 2}
   - {fileID: 11400000, guid: df75409d5a460b3468221c9e1d620667, type: 2}
   - {fileID: -3707455756987394989, guid: 6b5ab973502cbe54b902255bfae7a536, type: 2}
   metroInputSource: 0
@@ -165,7 +166,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.Iridium.com.Surface_VR_Experience
+    Android: com.Iridium.FinalMap
     Standalone: com.Iridium.com.Iridium.early-proof-of-concept-metal-crater
   buildNumber:
     Standalone: 0
@@ -750,10 +751,7 @@ PlayerSettings:
   webGLMemoryGeometricGrowthStep: 0.2
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
-  scriptingDefineSymbols:
-    Android: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS
-    Standalone: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS
-    Windows Store Apps: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS
+  scriptingDefineSymbols: {}
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
@@ -863,11 +861,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: 515fcda5-87a5-4ecf-a2cf-eace4fdf3cf7
+  cloudProjectId: 20fe0357-6027-44e2-b9b8-5f5531a559a6
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Surface VR Experience
-  organizationId: drkreplicant
+  projectName: com.Iridium.Surface_VR_Experience
+  organizationId: arcarden
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
