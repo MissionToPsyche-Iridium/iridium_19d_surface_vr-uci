@@ -325,7 +325,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9228ca571896b7d46a60d0b4f826d494, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eba5920ff00edc142bf9d885130f9af0, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -9818,7 +9818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelCompletePanel: {fileID: 1131086239}
-  nextScene: MainMenu
+  nextScene: MoonRoverScene
 --- !u!114 &1132312425
 MonoBehaviour:
   m_ObjectHideFlags: 0
