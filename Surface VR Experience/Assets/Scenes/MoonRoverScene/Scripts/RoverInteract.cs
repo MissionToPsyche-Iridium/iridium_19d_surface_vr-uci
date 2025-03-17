@@ -140,7 +140,7 @@ public class RoverEnterInteraction : MonoBehaviour
             inRoverTooltip.SetActive(true);
             hasShownBefore = true; 
 
-            StartCoroutine(HideRoverPanel(10f));
+            StartCoroutine(HideRoverPanel(30f));
        }
 
         

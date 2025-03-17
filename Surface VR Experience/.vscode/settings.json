@@ -51,5 +51,10 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Surface VR Experience.sln"
+    "dotnet.defaultSolution": "Surface VR Experience.sln",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#42270E",
+        "titleBar.activeBackground": "#5C3714",
+        "titleBar.activeForeground": "#FDF9F6"
+    }
 }
