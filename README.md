@@ -45,10 +45,7 @@ In-Game Menu / Pause: Left controller menu button. <br>
 <br><br>
 
 **Gameplay Teaser Video** <br>
-https://youtu.be/4qvfd2WOo3U<br>
-
-**Gameplay Tutorial Video** <br>
-Coming Soon <br>
+[https://youtu.be/4qvfd2WOo3U](https://youtu.be/hUuuCb1-6j0?si=0O4GnS0OOl69kgRK)<br>
 
 ---
 
