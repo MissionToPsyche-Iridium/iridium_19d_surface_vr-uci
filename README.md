@@ -38,10 +38,11 @@ In-Game Menu / Pause: Left controller menu button. <br>
 ---
 
 **Screenshots (App)** <br>
-![1231image](https://github.com/user-attachments/assets/68596e09-ebf6-4e5d-b62a-0301f8c4c01d)
+![MainMenu](https://github.com/user-attachments/assets/eb87f613-593b-4264-a368-9901438d62c5)
 ![image](https://github.com/user-attachments/assets/824652ae-f72d-4673-9d9b-25a98bd258cc)
 ![HobaCraterLarge](https://github.com/user-attachments/assets/095ebd9a-7e8b-4e4e-a8d2-a37b0f83b80b)
-![SpacecraftScene](https://github.com/user-attachments/assets/8fda8414-6299-448d-823c-075220cf26df)
+![PsycheSpacecraft](https://github.com/user-attachments/assets/a6daf459-e63f-4255-b42f-db7f377e41bf)
+![Moon-Rover](https://github.com/user-attachments/assets/bfb8a1b1-d77e-4c5f-aa5c-ff22563f2226)
 <br><br>
 
 **Gameplay Teaser Video** <br>
