@@ -1,4 +1,4 @@
-**Surface VR Experience** <br>
+**Psyche 16: Expedition VR** <br>
 
 **Disclaimer** <br>
 This work was created in partial fulfillment of University of California, Irvine Capstone Courses 191A and 191B. The work is a result of the Psyche Student Collaborations component of NASA’s Psyche Mission (https://psyche.asu.edu). “Psyche: A Journey to a Metal World” [Contract number NNM16AA09C] is part of the NASA Discovery Program mission to solar system targets. Trade names and trademarks of ASU and NASA are used in this work for identification only. Their usage does not constitute an official endorsement, either expressed or implied, by Arizona State University or National Aeronautics and Space Administration. The content is solely the responsibility of the authors and does not necessarily represent the official views of ASU or NASA. <br>
@@ -7,7 +7,7 @@ This work was created in partial fulfillment of University of California, Irvine
 This repository contains the source code, and documentation for the NASA ASU Capstone Project. The project is a collaborative effort between Arizona State University, NASA, and students capstone participants from the University of California, Irvine with the aim to create a virtual reality experience to simulate standing on another planetary body by showcasing the actual data and what is already known about other non-Earth bodies.<br>
 
 **Project Description** <br>
-Surface VR : Experience is a first person VR simulation of the surface and orbit of Asteroid 16 Psyche, as well as, the surface of the Moon. The project  features two gameplay modes: event mode (timed levels), and play mode (untimed levels). Players may select from a variety of scenes, from the base of a deep metallic crater, to flying through space as the Psyche Spacecraft orbits the Asteroid Psyche. Players are immersed in a 360 degree virtual world where they interact with objects to learn more about them. Discover all of the objects in the game to win!<br>
+Psyche 16: Expedition VR is a first person VR simulation of the surface and orbit of Asteroid 16 Psyche, as well as, the surface of the Moon. The project  features two gameplay modes: event mode (timed levels), and play mode (untimed levels). Players may select from a variety of scenes, from the base of a deep metallic crater, to flying through space as the Psyche Spacecraft orbits the Asteroid Psyche. Players are immersed in a 360 degree virtual world where they interact with objects to learn more about them. Discover all of the objects in the game to win!<br>
 
 ---
 
@@ -20,7 +20,7 @@ In-Game Menu / Pause: Left controller menu button. <br>
 **Gameplay** <br>
 
 ***Main Menu:***  From the main menu, users may view information about each scene by pressing the “i” button. Users may select from event and play modes. Users may cycle through game scenes then press play to begin the scene that is currently displayed on the scene carousel. A game tutorial panel is visible from the main menu. <br>
-![Main Menu](https://github.com/user-attachments/assets/09d929e2-a616-4431-911c-394a2f3e51d2)
+![MainMenu](https://github.com/user-attachments/assets/fedf516b-d201-4ee3-b772-563710acc2ee)
 
 ***Event Mode:*** This is the default mode. In event mode, the user is given two minutes to explore and interact with each scene. After two minutes, the game will transition to the next scene. The user may also move to the next scene by interacting with all objects on that scene. <br>
 
@@ -38,7 +38,6 @@ In-Game Menu / Pause: Left controller menu button. <br>
 ---
 
 **Screenshots (App)** <br>
-![MainMenu](https://github.com/user-attachments/assets/eb87f613-593b-4264-a368-9901438d62c5)
 ![image](https://github.com/user-attachments/assets/824652ae-f72d-4673-9d9b-25a98bd258cc)
 ![HobaCraterLarge](https://github.com/user-attachments/assets/095ebd9a-7e8b-4e4e-a8d2-a37b0f83b80b)
 ![PsycheSpacecraft](https://github.com/user-attachments/assets/a6daf459-e63f-4255-b42f-db7f377e41bf)
@@ -46,7 +45,7 @@ In-Game Menu / Pause: Left controller menu button. <br>
 <br><br>
 
 **Gameplay Teaser Video** <br>
-[https://youtu.be/4qvfd2WOo3U](https://youtu.be/hUuuCb1-6j0?si=0O4GnS0OOl69kgRK)<br>
+https://youtu.be/xbsoMsiqtd0<br>
 
 ---
 
