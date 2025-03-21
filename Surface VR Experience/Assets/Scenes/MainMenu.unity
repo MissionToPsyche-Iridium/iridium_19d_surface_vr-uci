@@ -9411,7 +9411,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'SURFACE: VR EXPERIENCE'
+  m_text: 'PSYCHE 16: EXPEDITION VR'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: efa915dab8cedda42be0f38c644a66e5, type: 2}
   m_sharedMaterial: {fileID: -8752609567494478377, guid: efa915dab8cedda42be0f38c644a66e5, type: 2}
@@ -11417,32 +11417,31 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Development Team\r\n\r\nTeam Iridium\r\nDavid Branson\r\nArmani Cardenas\r\nCaroline
-    David\r\nYeseul Lim\r\nDylan Peppard\r\nJonathan Vigil\r\n\nUI/UX Design Research
-    and Ideation\nCaroline David\r\nYeseul Lim\r\n\nUI/UX Sketching and Wireframing\nCaroline
-    David\r\nYeseul Lim\r\n\nUI/UX Mockups\nCaroline David\r\nYeseul Lim\r\n\nGame
-    Design (Level Design, Mechanics, and Player Interactions.)\r\nDavid Branson\nCaroline
-    David\r\nDylan Peppard\r\nJohnathan Vigil\r\nArmani Cardenas\n\nProgrammers (Gameplay
-    Features, Tools, and Scripts.)\r\nDavid Branson\r\nDylan Peppard\r\nArmani Cardenas\n\nArtists
-    (Texture Design, 3D Modeling, and Concept Art.)\r\nDavid Branson\r\nJonathan
-    Vigil\r\nArmani Cardenas\n\r\n\rAnimation\nDavid Branson\r\nJonathan Vigil\r\nArmani
-    Cardenas\n\nEducational Materials\nDavid Branson\r\nCaroline David\r\nJohnathan
-    Vigil\r\n\nAudio\r\nDavid Branson\r\r\n\r\nTechnical Team\n\nEngineering (Physics,
-    Performance, and Rendering.)\r\nDavid Branson\r\nArmani Cardenas\n\r\nQA (Gameplay
-    Testing, Identify, and Report Bugs.)\r\nDavid Branson\r\nArmani Cardenas\r\nDylan
+  m_text: "PSYCHE 16: EXPEDITION VR\n\nDevelopment Team\r\n\r\nTeam Iridium\r\nDavid
+    Branson\r\nArmani Cardenas\r\nCaroline David\r\nYeseul Lim\r\nDylan Peppard\r\nJonathan
+    Vigil\r\n\nUI/UX Design Research and Ideation\nCaroline David\r\nYeseul Lim\r\n\nUI/UX
+    Sketching and Wireframing\nCaroline David\r\nYeseul Lim\r\n\nUI/UX Mockups\nCaroline
+    David\r\nYeseul Lim\r\n\nGame Design (Level Design, Mechanics, and Player Interactions.)\r\nDavid
+    Branson\nCaroline David\r\nDylan Peppard\r\nJohnathan Vigil\r\nArmani Cardenas\n\nProgrammers
+    (Gameplay Features, Tools, and Scripts.)\r\nDavid Branson\r\nDylan Peppard\r\nArmani
+    Cardenas\n\nArtists (Texture Design, 3D Modeling, and Concept Art.)\r\nDavid
+    Branson\r\nJonathan Vigil\r\nArmani Cardenas\n\r\n\rAnimation\nDavid Branson\r\nJonathan
+    Vigil\r\nArmani Cardenas\n\nEducational Materials\nDavid Branson\r\nCaroline
+    David\r\nJohnathan Vigil\r\n\nAudio\r\nDavid Branson\r\r\n\r\nTechnical Team\n\nEngineering
+    (Physics, Performance, and Rendering.)\r\nDavid Branson\r\nArmani Cardenas\n\r\nQA
+    (Gameplay Testing, Identify, and Report Bugs.)\r\nDavid Branson\r\nArmani Cardenas\r\nDylan
     Peppard\r\nJohnathan Vigil\r\n\nBuild Engineers (Maintain Builds and Deployment
     Pipelines.)\r\nDavid Branson\r\nDylan Peppard\r\r\n\nAcknowledgements\r\n\nSpecial
     thanks to NASA and Arizona State University for providing this incredible opportunity.\r\n\nOur
     Senior capstone course staff.\r\n\nOpen-source contributors whose tools and libraries
     we've utilized:\n\n\"Mondfahrzeug (Lunar Rover)\" (https://skfb.ly/otJtA) by
-    Deutsches Museum | Digital is licensed under Creative Commons Attribution-ShareAlike
-    (http://creativecommons.org/licenses/by-sa/4.0/).\n\n\n\"PSYCHE 20170116 DEC
-    (2)\" (https://skfb.ly/ovUQo) by khatfie2 is licensed under Creative Commons
-    Attribution (http://creativecommons.org/licenses/by/4.0/).\n\n\r\n\rSupport and
-    Management\r\n\nUCI Faculty\r\nProfessor Darren Aaron Denenberg\r\n\nNASA ASU\r\nDr.
-    Cassie Bowman\r\r\n\r\n\nFor inquiries contact\r\n\r\nDavid Branson\r\nEmail:
-    dbransonuci@gmail.com\r\nLinkedin: linkedin.com/dbransonuci\r\n\r\nDylan Peppard\r\nEmail:
-    dpeppard@uci.edu\r\nLinkedin: linkedin.com/in/dylan-peppard-896713132/\r\r\n\nJonathan
+    Deutsches Museum\nDigital is licensed under Creative Commons Attribution-ShareAlike\n(http://creativecommons.org/licenses/by-sa/4.0/).\n\n\"PSYCHE
+    20170116 DEC (2)\" (https://skfb.ly/ovUQo) by khatfie2\nis licensed under Creative
+    Commons Attribution \n(http://creativecommons.org/licenses/by/4.0/).\n\r\n\rSupport
+    and Management\r\n\nAcademic Support, UCI \nProfessor Darren Aaron Denenberg\r\n\nScientific
+    and Technical Support\nDr. Cassie Bowman\r\r, NASA ASU\r\n\r\n\nFor inquiries
+    contact\r\n\r\nDavid Branson\r\nEmail: dbransonuci@gmail.com\r\nLinkedin: linkedin.com/dbransonuci\r\n\r\nDylan
+    Peppard\r\nEmail: dpeppard@uci.edu\r\nLinkedin: linkedin.com/in/dylan-peppard-896713132/\r\r\n\nJonathan
     Vigil\r\nEmail: jvigil1738@gmail.com\r\n\nYeseul Lim\r\nEmail: yeseullim1@gmail.com\r\n\nArmani
     Cardenas\r\nEmail: armanicardenas12@gmail.com\r\nLinkedin: https://www.linkedin.com/in/armanicardenas\r\n\r\nCaroline
     David\r\nEmail: carolinehudavid@gmail.com\r\nLinkedin: https://www.linkedin.com/in/carolinehudavid/\r\n\n\nTHANK
